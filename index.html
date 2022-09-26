@@ -22,19 +22,18 @@
 </head>
 <body>
 :)
-<button onclick="gtag('event', 'TestEnhancedEcommerce', {
-		  'event_label': 'TestEventAction',
+<button onclick="gtag('event', 'purchase', {
+		  'event_label': 'purchase',
+		  'event_action': 'purchase'
+		});">Purchase event</button>
+<button onclick="gtag('event', 'booking made', {
+		  'event_label': 'TestEventLabelBooking',
 		  'event_category': 'EnhancedEcommerce',
-		  'event_action': 'Added Product'
-		});">Example Button Text</button>
-<button onclick="gtag('event', 'TestEnhancedEcommerce2', {
-		  'event_label': 'TestEventAction',
-		  'event_category': 'EnhancedEcommerce',
-		  'event_action': 'Completed Order'
-		});">Example Button Text 2</button>
-	<button onclick="gtag('event', 'TestEnhancedEcommerce3', {
-		  'event_label': 'TestEventAction',
+		  'event_action': 'Booking Made'
+		});">Booking event</button>
+	<button onclick="gtag('event', 'form_submit', {
+		  'event_label': 'TestEventLabelFormSubmit',
 		  'event_category': 'EnhancedEcommerce'
-		});">No action param</button>
+		});">Form submit event</button>
 </body>
 </html>
