@@ -32,7 +32,21 @@
           // awxconversioncoveragetester5@gmail.com
           gtag('config', 'G-V79KDFGVF0');
 	</script>
-
+	<script>
+	function gtag_report_conversion(url) {
+	  var callback = function () {
+	    if (typeof(url) != 'undefined') {
+	      window.location = url;
+	    }
+	  };
+	  gtag('event', 'conversion', {
+	      'send_to': 'G-8QEEGBM5X2',
+	      'transaction_id': '',
+	      'event_callback': callback
+	  });
+	  return false;
+	}
+	</script>
 	<title>Test site</title>
 </head>
 <body>
